@@ -1,0 +1,54 @@
+@charset "UTF-8";
+main{
+    display: grid;
+    grid-template-areas:
+        "h h h h h"
+        "n a a a t"
+        "n a a a t"
+        "n a a a t"
+        "f f f f f";
+
+}
+
+@media screen and (max-width: 888px){
+main{
+    display: grid;
+    grid-template-areas:
+        "h h h h "
+        "n a a a "
+        "n a a a "
+        "t t t t "
+        "f f f f ";
+
+}
+aside{
+    margin-top: 10px;
+}
+article{
+        margin: 0px;
+        margin-left:   10px;
+    }
+@media screen and (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-areas:
+            "h h h h h"
+            "n n n n n"
+            "a a a a a"
+            "t t t t t"
+            "f f f f f";
+    }
+    article{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    aside{
+        margin-top: 0px;
+    }
+    nav{
+        margin-bottom:  10px;
+    }
+
+
+}
+}
